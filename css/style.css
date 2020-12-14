@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+#title-1 {
+    color: blue;
+    background-color: aquamarine;
+}
+
+#title-2 {
+    color: rgb(109, 233, 212);
+    background-color: rgb(7, 88, 32);
+}
+
+#title-3 {
+    color: rgb(235, 162, 95);
+    background-color: rgb(105, 11, 4);
+}
+
+.div-1 {
+    color: white;
+    background-color: rgb(27, 155, 230);
+}
+
+.div-2 {
+    color: rgb(3, 36, 16);
+    background-color: aquamarine;
+}
+
+.div-3 {
+    color: rgb(39, 22, 2);
+    background-color: rgb(230, 144, 87);
+}
+
+p {
+    clear: both;
+    padding: 5px;
+}
+
+.div-1, .div-2, .div-3 {
+    float: left;
+    flex: 30%;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 50px;
+    /* position: relative; */
+}
+
+#title-1, #title-2, #title-3 {
+    font-size: 1.5em;
+    border: 1px solid black;
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+@media (min-width: 992px) {
+    .div-1, .div-2, .div-3 {
+        float: left;
+        width: 33%;
+        border: 2px solid black;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}
+
+
+@media  (max-width: 991px) and (min-width: 768px) {
+    .div-1, .div-2, .div-3 {
+        float: left;
+        flex: 40%;
+        border: 2px solid black;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+} 
+
+@media (max-width: 767px)  {
+    .div-1, .div-2, .div-3 {
+        float: left;
+        flex: 100%;
+        border: 2px solid black;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}
